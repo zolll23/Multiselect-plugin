@@ -1,0 +1,44 @@
+.vpa-multiselect {
+	position: relative;
+}
+
+.vpa-multiselect td {
+	vertical-align: top;
+}
+
+.vpa-multiselect ul {
+	width:200px;
+    height:200px;
+    outline:0;
+    overflow: auto;
+	-ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+    border-color: inherit;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.vpa-multiselect .vpa-multiselect-middle-cell {
+	position: absolute;
+	left: calc(50% - 2rem);
+	top: calc(50% - 4rem);
+}
+
+/*.vpa-multiselect .vpa-multiselect-middle-cell button {
+	position: absolute;
+	left: -1.75rem;
+}*/
+
+.vpa-multiselect ul::-webkit-scrollbar { 
+    display: none; // Safari and Chrome
+}
+
+.vpa-multiselect td:first-child ul {
+	padding-right: 2.5rem;
+	padding-left: 1rem;
+}
+
+.vpa-multiselect td:last-child ul {
+	padding-left: 2.5rem;
+	padding-right: 1rem
+}

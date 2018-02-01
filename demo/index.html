@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Two-panel multiselect demo page</title>
+<meta name="author" content="Andrey Pakhomov andrey.pahomov@gmail.com">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+<link rel="stylesheet" href="../bootstrap-material-design.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" crossorigin="anonymous"></script>
+<script src="../jquery.multiselect.js"></script>
+<link href="../jquery.multiselect.css" rel="stylesheet" title="CSS for jQuery Multiselect plugin" />
+<style>
+#demo {
+    width:200px;
+    height:300px;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+jQuery(document).ready(
+	function () {
+    $("#demo").gs_multiselect();
+    $m=$('body').bootstrapMaterialDesign();
+});
+</script>
+<div class="m-5">
+<h1>Two-panel multiselect demo page</h1>
+<p>
+Use arrow left/right between panels for select/deselect options or moving items use double-click on item.
+</p>
+<select id="demo" multiple="multiple" name="brand" class="border-primary">
+<option value="google" selected>Google</option>
+<option value="microsoft">Microsoft</option>
+<option value="apple">Apple</option>
+<option value="amazon">Amazon</option>
+<option value="yahoo" selected>Yahoo</option>
+<option value="yandex" selected>Yandex</option>
+<option value="polycom">Polycom</option>
+<option value="dlink">D-Link</option>
+<option value="samsung">Samsung</option>
+<option value="xiaomi">Xiaomi</option>
+<option value="netscape">Netscape</option>
+<option value="petzl">Petzl</option>
+<option value="haupa">Haupa</option>
+<option value="zandz">ZandZ</option>
+</select>
+</div>
+</body>
+</html>
